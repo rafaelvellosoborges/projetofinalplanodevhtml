@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fale conosco: formulário completo, telefone, email, endereço e mapa.">
+  <meta name="author" content="Sua Corretora">
+  <meta name="keywords" content="contato, formulário, endereço, telefone, mapa">
+
+  <title>Corretora de Seguros — Fale conosco | Contato</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav aria-label="Menu principal">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1>Fale conosco</h1>
+      <p>Use o formulário abaixo para solicitar cotações ou tirar dúvidas. Preferindo, ligue ou envie mensagem.</p>
+    </section>
+
+    <!-- Formulário completo com validações básicas -->
+    <section class="container form-wrapper">
+      <h2>Formulário de contato</h2>
+      <!-- Comentário: substitua action com backend real; aqui apenas demonstração -->
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <div class="form-group">
+            <label for="nome"><strong>Nome completo</strong></label>
+            <input type="text" id="nome" name="nome" placeholder="Ex.: Maria Silva" required minlength="3" maxlength="80">
+          </div>
+
+          <div class="form-group">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telefone"><strong>Telefone</strong></label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(12) 99999-9999" pattern="\\(\\d{2}\\)\\s?\\d{4,5}-\\d{4}" required>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto"><strong>Assunto</strong></label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione...</option>
+              <option value="cotacao">Cotação</option>
+              <option value="sinistro">Sinistro</option>
+              <option value="renovacao">Renovação</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <span class="label"><strong>Preferência de contato</strong></span>
+            <div class="inline-group">
+              <label><input type="radio" name="preferencia" value="telefone" required> Telefone</label>
+              <label><input type="radio" name="preferencia" value="email"> Email</label>
+              <label><input type="radio" name="preferencia" value="whatsapp"> WhatsApp</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem"><strong>Mensagem</strong></label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Conte brevemente sua necessidade..." required minlength="10"></textarea>
+          </div>
+
+          <div class="form-group inline-group">
+            <label><input type="checkbox" name="consentimento" required> Autorizo o contato para ofertas e cotações.</label>
+            <label><input type="checkbox" name="newsletter"> Quero receber a newsletter.</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Informações de contato e lista não ordenada -->
+    <section class="container">
+      <h2>Informações</h2>
+      <ul>
+        <li><strong>Atendimento:</strong> Seg a Sex, 9h às 18h.</li>
+        <li><strong>WhatsApp:</strong><a href="https://wa.me/5512981122726" target="_blank" rel="noopener">(12) 98112-2726</a></li>
+        <li><strong>Documentos:</strong> RG, CPF, Endereço Completo.</li>
+      </ul>
+    </section>
+
+    <!-- Mapa via iframe do Google Maps -->
+    <section class="container">
+      <h2>Onde estamos</h2>
+      <div class="map-wrapper">
+        <!-- Comentário: exemplo de embed; substitua pelo endereço exato -->
+        <iframe
+          title="Mapa da corretora em Taubaté"
+          src="https://www.google.com/maps?q=Taubat%C3%A9,+SP&output=embed"
+          width="100%" height="400" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h3>Contato</h3>
+        <p><strong>Telefone:</strong> (12) 3456-7890</p>
+        <p><strong>Email:</strong> atendimento@corretorasegura.com.br</p>
+        <p><strong>Endereço:</strong> Av. Principal, 123 — Taubaté, SP</p>
+      </section>
+      <section>
+        <h3>Redes sociais</h3>
+        <ul class="social">
+          <li><a href="https://www.instagram.com/sirmionecorretora" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/rafaelvelloso" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Legal</h3>
+        <p>&copy; 2025 Corretora de Seguros. Todos os direitos reservados.</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
