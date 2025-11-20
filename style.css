@@ -77,6 +77,15 @@ body {
 .btn-primary { background: #0d3b66; color: #fff; }
 .btn-secondary { background: #e0e0e0; color: #222; }
 
+.destaquescontainer h2 {
+  text-align: center;
+  ;
+}
+
+.destaquescontainer img{
+  align-items: center;
+  justify-content: center;
+}
 /* Cards */
 .cards {
   display: grid;
@@ -85,7 +94,11 @@ body {
   list-style: none;
   padding: 0;
 }
+
 .card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
   background: #fff;
   border: 1px solid #eee;
   border-radius: .5rem;
@@ -96,6 +109,9 @@ body {
   width: 200px;
   height: auto;
   border-radius: .35rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Tabelas */

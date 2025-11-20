@@ -80,8 +80,11 @@ body {
   gap: 1rem;
   list-style: none;
   padding: 0;
+ 
 }
 .card {
+   margin-left: auto;
+  margin-right: auto;
   background: #fff;
   border: 1px solid #eee;
   border-radius: .5rem;
@@ -92,6 +95,9 @@ body {
   width: 200px;
   height: auto;
   border-radius: .35rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Tabelas */
